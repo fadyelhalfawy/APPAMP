@@ -64,6 +64,12 @@ nav a {
     border: 2px solid #008CBA;
     border-radius: 4px;
 }
+
+.buy-now:hover {
+    cursor: pointer;
+    background-color: #9dd9ed;
+    opacity: 0.8;
+}
 /*  */
 
 main {
@@ -74,7 +80,7 @@ main {
     gap: 1.5rem;
 }
 
-/* First section */
+/* Get App form */
 #get-app-form p,h2 {
     color: white;
     text-align: center;
@@ -112,9 +118,13 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
 /*  */
 
-/* Second Section */
+/* Rating form */
 #rating-form {
     display: flex;
     line-height: 1.4rem;
@@ -122,7 +132,7 @@ input[type=submit] {
 }
 /*  */
 
-/* Third Section */
+/* Activity goals */
 #activity-goals {
     background-color: floralwhite;
     display: flex;
@@ -141,8 +151,8 @@ input[type=submit] {
 }
 /*  */
 
-/* Fourth Section */
-#about-application-card .card-title{
+/* About App */
+#about-application-card .card-title {
     text-align: center;
     margin: 10px;
     line-height: 1.5rem;
@@ -162,13 +172,13 @@ input[type=submit] {
 #about-application-card .card-body .card-text {
     margin: 15px;
 }
-/*  */
 
-/* Fifth Section */
+/* Look at App */
 #look-at-application-form .card-title {
     text-align: center;
     margin-bottom: 10px;
 }
+
 #look-at-application-form .card-body {
     display: flex;
     flex-direction: column;
@@ -177,6 +187,74 @@ input[type=submit] {
 #look-at-application-form .card-body img {
     width: 100%;
     margin-bottom: 10px;
+}
+/*  */
+
+/* Start using app card */
+#get-access-app .card-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#get-access-app .card-title h3 {
+    margin-bottom: 10px;
+}
+
+#get-access-app .get-access-app-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#get-access-app .card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+#get-access-app .card-body .card-text {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0.8;
+}
+
+#get-access-app .card-body .card-text .card-image {
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+}
+
+#get-access-app .card-body .card-button {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: rgb(19, 19, 171);
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+
+#get-access-app .card-body .card-button:hover {
+    cursor: pointer;
+    background-color: rgb(167, 167, 230);
+    opacity: 0.6;
+}
+
+/*  */
+
+/* Footer */
+footer {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 /*  */
 @media screen and (min-width: 576px) {
