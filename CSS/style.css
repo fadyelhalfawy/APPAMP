@@ -372,6 +372,48 @@ input[type=submit]:hover {
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+#app-form {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#app-form p {
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+#app-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#app-form .app-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#app-form .app-buttons a {
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#app-form .app-buttons .apple-button {
+    background-color: white;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+}
+
+#app-form .app-buttons .android-button {
+    background-color: rgb(48, 189, 5);
+    color: white;
+}
+
+#app-form img {
+    width: 150px;
+    margin-bottom: 15px;
+}
 /*  */
 
 /* Footer */
@@ -554,5 +596,9 @@ footer {
     #our-team .team-cards .card-body {
         margin: 90px 14px;
         width: 21%;
+    }
+
+    #app-form h3 {
+        width: 99%;
     }
   }
