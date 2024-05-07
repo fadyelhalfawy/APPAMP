@@ -8,8 +8,6 @@
 body {
     font: 1rem "Nunito", sans-serif;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -22,6 +20,7 @@ footer {
 }
 
 .small-p {
+    opacity: 0.8;
     font-size: 12px;
 }
 /*  */
@@ -137,13 +136,13 @@ input[type=submit]:hover {
     background-color: floralwhite;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 15px;
     align-items: center;
     text-align: center;
 }
 
 #activity-goals h3 {
-    line-height: 2.5rem;
+    margin-bottom: 10px;
 }
 
 #activity-goals img {
@@ -233,6 +232,7 @@ input[type=submit]:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: rgb(19, 19, 171);
     padding: 10px;
+    margin: 10px 0;
     font-weight: bold;
     border: 2px solid white;
     border-radius: 4px;
@@ -247,6 +247,133 @@ input[type=submit]:hover {
 
 /*  */
 
+/* Feedback Section */
+#feedback {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#feedback p {
+    opacity: 0.6;
+}
+
+#feedback .feedback-user {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#feedback .feedback-image {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+#feedback .icon {
+    opacity: 0.4;
+}
+/*  */
+
+/* Our Team */
+#our-team {
+    padding: 15px;
+}
+
+#our-team .info {
+    margin-bottom: 10px;
+}
+
+#our-team .parg {
+    display: flex;
+    gap: 1;
+    text-wrap: balance;
+}
+
+#our-team .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#our-team .team-cards .card-body {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 70px 10px;
+    width: 44%;
+}
+
+#our-team .team-cards .card-body img {
+    position: relative;
+    bottom: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#our-team .team-cards .card-body .card-items {
+    position: relative;
+    bottom: 50px;
+}
+
+#our-team .team-cards .card-body .card-items p {
+    margin: 15px 0;
+    opacity: 0.5;
+}
+
+#our-team .team-cards .card-body .card-items a {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+}
+/*  */
+
+/* User Opinion */
+#user-opinion {
+    text-align: center;
+    padding: 10px;
+}
+
+#user-opinion p {
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+#user-opinion h3 {
+    margin-bottom: 10px;
+}
+
+#user-opinion .message-card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+#user-opinion .message-card .user-info {
+    display: flex;
+    gap: 20px;
+}
+
+#user-opinion .message-card .message-form {
+    margin-bottom: 20px;
+}
+
+#user-opinion .message-card .message {
+    padding: 30px;
+}
+
+#user-opinion .message-card a {
+    padding: 10px;
+    background-color: rgb(15, 68, 194);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/*  */
+
 /* Footer */
 footer {
     background: white;
@@ -254,13 +381,178 @@ footer {
     color: black;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
 }
 /*  */
 @media screen and (min-width: 576px) {
+    header {
+        display: flex;
+        gap: 0;
+    }
+
+    nav {
+        margin-right: 15px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    #get-app-form {
+        width: 100%;
+    }
+
+    .get-app {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
     
+    input[type=text] {
+        width: auto
+    }
+      
+    input[type=submit] {
+        width: auto;
+        padding: 14px 35px;
+    }
+
+    #rating-form {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #activity-goals {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    #activity-goals img {
+        width: 50%;
+    }
+
+    #about-application-card .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #about-application-card .card-body {
+        text-wrap: balance;
+        width: 46%;
+        margin-left: 20px;
+    }
+
+    #about-application-card .card-body img {
+        width: 75px;
+    }
+
+    #look-at-application-form .card-body { 
+        flex-flow: row wrap;
+    }
+
+    #look-at-application-form .card-body img { 
+        width: 29%;
+        margin: 12px;
+    }
+
+    
+    #get-access-app .get-access-app-cards { 
+        flex-direction: row;
+    }
+
+    #get-access-app .get-access-app-cards .card-body { 
+        margin: 0;
+    }
+    
+    #our-team .team-cards .card-body {
+        margin: 90px 14px;
+        width: 28%;
+    }
+
+    #user-opinion .message-card .email {
+        width: 100%;
+    }
+
+    #user-opinion .message-card .message {
+        width: 100%;
+        padding: 30px;
+    }
   }
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        gap: 12%;
+    }
+
+    nav a {
+        padding: 5px;
+    }
     
+    #get-app-form {
+        width: 100%;
+    }
+
+    .get-app {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    input[type=text] {
+        width: auto
+    }
+      
+    input[type=submit] {
+        width: auto;
+        padding: 14px 35px;
+    }
+
+    #rating-form {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #activity-goals {
+        flex-direction: row;
+        gap: 0;
+        text-align: left;
+    }
+    
+    #activity-goals img {
+        width: 50%;
+    }
+
+    #about-application-card .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #about-application-card .card-body {
+        text-wrap: balance;
+        width: 30%;
+        margin-left: 10px;
+    }
+
+    #about-application-card .card-body img {
+        width: 75px;
+    }
+
+    #look-at-application-form .card-body { 
+        flex-flow: row wrap;
+    }
+
+    #look-at-application-form .card-body img { 
+        width: 30%;
+        margin: 10px;
+    }
+
+    
+    #get-access-app .get-access-app-cards { 
+        flex-direction: row;
+    }
+    
+    #our-team .team-cards .card-body {
+        margin: 90px 14px;
+        width: 21%;
+    }
   }
