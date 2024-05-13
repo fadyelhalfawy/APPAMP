@@ -302,7 +302,7 @@ input[type=submit]:hover {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 70px 10px;
-    width: 44%;
+    width: 100%;
 }
 
 #our-team .team-cards .card-body img {
